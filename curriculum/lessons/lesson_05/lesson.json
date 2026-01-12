@@ -6,9 +6,9 @@
   "type": "review",
   "estimatedDuration": 10,
   "objectives": [
-    "Comprehensive review of m, s, t, a",
+    "Comprehensive review of /m/, /s/, /t/, /æ/ sounds",
     "Fluent reading of all learned words",
-    "Introduction of sight words 'a' and 'is'"
+    "Introduction of sight word 'is'"
   ],
   "prerequisites": ["lesson_04"],
   "graphemeConstraints": {
@@ -20,7 +20,7 @@
       {"grapheme": "s", "phoneme": "/s/", "isNew": false},
       {"grapheme": "t", "phoneme": "/t/", "isNew": false}
     ],
-    "sightWords": ["the", "a", "is"]
+    "sightWords": ["the", "is"]
   },
   "steps": [
     {
@@ -132,17 +132,17 @@
     {
       "stepId": "step_07",
       "stepNumber": 7,
-      "type": "sight_word",
-      "title": "New Sight Word: a",
-      "instruction": "Here is a new sight word. This word is 'a'. Say 'a'.",
+      "type": "blending_practice",
+      "title": "The Word 'a'",
+      "instruction": "This is the word 'a'. It has one letter and one sound: /æ/. Say 'a'.",
       "audioAssetId": "instruction_sight_a",
       "interactionType": "listen",
       "requiredAction": "tap_continue",
       "content": {
         "displayText": "a",
-        "sightWord": "a",
+        "targetWord": "a",
         "visualElements": [
-          {"type": "sight_word_display", "content": "a", "size": "large"}
+          {"type": "word_display", "content": "a", "size": "large"}
         ]
       }
     },
@@ -167,14 +167,14 @@
       "stepId": "step_09",
       "stepNumber": 9,
       "type": "practice",
-      "title": "Read Sight Words",
-      "instruction": "Read all three sight words: the, a, is.",
+      "title": "Read These Words",
+      "instruction": "Read these words: the, a, is.",
       "audioAssetId": "prompt_sight_words",
       "interactionType": "record",
       "requiredAction": "record_audio",
       "content": {
         "displayText": "the    a    is",
-        "sightWords": ["the", "a", "is"],
+        "words": ["the", "a", "is"],
         "recordingPrompt": "Read: the, a, is",
         "maxRecordingDuration": 8
       }
@@ -251,13 +251,13 @@
       "stepId": "step_14",
       "stepNumber": 14,
       "type": "review",
-      "title": "Great Work",
-      "instruction": "Great work! You know all these sounds and words now.",
+      "title": "Good Work",
+      "instruction": "Good work. You know all these sounds and words now.",
       "audioAssetId": "instruction_great_work",
       "interactionType": "listen",
       "requiredAction": "tap_continue",
       "content": {
-        "displayText": "Sounds: M S T A\n\nWords: mat, sat, tam, at, am\n\nSight Words: the, a, is",
+        "displayText": "Sounds: /m/ /s/ /t/ /æ/\n\nWords: mat, sat, tam, at, am, a\n\nSight Words: the, is",
         "visualElements": []
       }
     },
@@ -266,13 +266,13 @@
       "stepNumber": 15,
       "type": "completion",
       "title": "All Done",
-      "instruction": "All done. You completed the short a review.",
+      "instruction": "All done. You completed the /æ/ review.",
       "audioAssetId": "prompt_completion",
       "interactionType": "listen",
       "requiredAction": "tap_finish",
       "content": {
         "displayText": "All Done",
-        "completionMessage": "You completed the short a review. Great reading!"
+        "completionMessage": "You completed the /æ/ review. Good reading."
       }
     }
   ],
@@ -313,15 +313,15 @@
     {"assetId": "instruction_word_review", "path": "prompts/instruction_word_review.mp3", "type": "instruction", "transcript": "Let's read all our words. Listen first.", "duration": 3.0},
     {"assetId": "prompt_read_all", "path": "prompts/prompt_read_all.mp3", "type": "prompt", "transcript": "Now you read all the words.", "duration": 2.5},
     {"assetId": "instruction_the", "path": "prompts/instruction_the.mp3", "type": "instruction", "transcript": "Here is our sight word 'the'. Say 'the'.", "duration": 3.0},
-    {"assetId": "instruction_sight_a", "path": "prompts/instruction_sight_a.mp3", "type": "instruction", "transcript": "Here is a new sight word. This word is 'a'. Say 'a'.", "duration": 4.0},
+    {"assetId": "instruction_sight_a", "path": "prompts/instruction_sight_a.mp3", "type": "instruction", "transcript": "This is the word 'a'. It has one letter and one sound: /æ/. Say 'a'.", "duration": 4.0},
     {"assetId": "instruction_sight_is", "path": "prompts/instruction_sight_is.mp3", "type": "instruction", "transcript": "Here is another new sight word. This word is 'is'. Say 'is'.", "duration": 4.5},
-    {"assetId": "prompt_sight_words", "path": "prompts/prompt_sight_words.mp3", "type": "prompt", "transcript": "Read all three sight words: the, a, is.", "duration": 3.5},
+    {"assetId": "prompt_sight_words", "path": "prompts/prompt_sight_words.mp3", "type": "prompt", "transcript": "Read these words: the, a, is.", "duration": 3.5},
     {"assetId": "instruction_story", "path": "prompts/instruction_story.mp3", "type": "instruction", "transcript": "Now let's read a longer story. Listen first.", "duration": 3.0},
     {"assetId": "prompt_your_read", "path": "prompts/prompt_your_read.mp3", "type": "prompt", "transcript": "Now you read the story. Take your time.", "duration": 3.0},
     {"assetId": "prompt_q1", "path": "prompts/prompt_q1.mp3", "type": "prompt", "transcript": "Where is Sam?", "duration": 1.5},
     {"assetId": "prompt_q2", "path": "prompts/prompt_q2.mp3", "type": "prompt", "transcript": "Who sat at a mat?", "duration": 2.0},
-    {"assetId": "instruction_great_work", "path": "prompts/instruction_great_work.mp3", "type": "instruction", "transcript": "Great work! You know all these sounds and words now.", "duration": 3.5},
-    {"assetId": "prompt_completion", "path": "prompts/prompt_completion.mp3", "type": "prompt", "transcript": "All done. You completed the short a review.", "duration": 3.0},
+    {"assetId": "instruction_great_work", "path": "prompts/instruction_great_work.mp3", "type": "instruction", "transcript": "Good work. You know all these sounds and words now.", "duration": 3.5},
+    {"assetId": "prompt_completion", "path": "prompts/prompt_completion.mp3", "type": "prompt", "transcript": "All done. You completed the /æ/ review. Good reading.", "duration": 3.0},
     {"assetId": "word_mat", "path": "words/word_mat.mp3", "type": "word", "transcript": "mat", "duration": 1.0},
     {"assetId": "word_sat", "path": "words/word_sat.mp3", "type": "word", "transcript": "sat", "duration": 1.0},
     {"assetId": "word_tam", "path": "words/word_tam.mp3", "type": "word", "transcript": "tam", "duration": 1.0},
@@ -335,7 +335,7 @@
   ],
   "metadata": {
     "createdAt": "2026-01-11T00:00:00Z",
-    "updatedAt": "2026-01-11T00:00:00Z",
+    "updatedAt": "2026-01-12T00:00:00Z",
     "author": "CalmRead Content Generator",
     "reviewStatus": "approved",
     "qaReportId": "qa_lesson_05_v1"
