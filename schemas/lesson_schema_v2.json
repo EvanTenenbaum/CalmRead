@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://calmread.com/schemas/lesson/v2.0.0",
+  "title": "CalmRead Lesson Schema v2",
+  "description": "Simplified, flat schema for CalmRead lessons. Prioritizes clarity and ease of generation over strict typing.",
+  "type": "object",
+  "required": [
+    "lessonId",
+    "version",
+    "title",
+    "lessonNumber",
+    "objectives",
+    "graphemeConstraints",
+    "steps",
+    "wordList",
+    "audioAssets",
+    "metadata"
+  ],
+  "properties": {
+    "lessonId": {
+      "type": "string",
+      "pattern": "^lesson_[0-9]{2}$",
+      "description": "Unique identifier, e.g., lesson_01"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the lesson content"
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable lesson title, focused on the sound being taught (e.g., 'Learning the /m/ Sound')"
+    },
+    "lessonNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Sequential lesson number"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["instruction", "review", "assessment"],
+      "default": "instruction",
+      "description": "Lesson type"
+    },
+    "estimatedDuration": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Estimated duration in minutes"
+    },
+    "objectives": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Learning objectives for this lesson"
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of prerequisite lessonIds"
+    },
+    "graphemeConstraints": {
+      "type": "object",
+      "required": ["allowedGraphemes", "bannedGraphemes", "taughtPatterns"],
+      "properties": {
+        "allowedGraphemes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Cumulative list of graphemes the child has learned"
+        },
+        "bannedGraphemes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Graphemes that MUST NOT appear in decodable content"
+        },
+        "taughtPatterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["grapheme", "phoneme", "isNew"],
+            "properties": {
+              "grapheme": { "type": "string" },
+              "phoneme": { "type": "string" },
+              "isNew": { "type": "boolean" }
+            }
+          },
+          "description": "Grapheme-phoneme correspondences taught or reviewed in this lesson"
+        },
+        "sightWords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "High-frequency irregular words available for use"
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/step" },
+      "minItems": 1,
+      "description": "Ordered sequence of lesson steps"
+    },
+    "wordList": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/word" },
+      "description": "Validated words used in this lesson"
+    },
+    "decodableText": {
+      "$ref": "#/definitions/decodableText",
+      "description": "Connected text passage for reading practice (optional for early lessons)"
+    },
+    "audioAssets": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/audioAsset" },
+      "description": "Audio files required for this lesson"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "author": { "type": "string" },
+        "reviewStatus": { "type": "string", "enum": ["draft", "review", "approved", "rejected"] },
+        "qaReportId": { "type": "string" }
+      }
+    }
+  },
+  "definitions": {
+    "step": {
+      "type": "object",
+      "required": ["stepId", "stepNumber", "type", "title", "instruction", "interactionType", "requiredAction"],
+      "properties": {
+        "stepId": {
+          "type": "string",
+          "pattern": "^step_[0-9]{2}$",
+          "description": "Unique step identifier within lesson"
+        },
+        "stepNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "introduction",
+            "review",
+            "phonemic_awareness",
+            "explicit_phonics",
+            "blending_practice",
+            "sight_word",
+            "decodable_read",
+            "record_read_aloud",
+            "comprehension_prompt",
+            "discrimination",
+            "practice",
+            "completion"
+          ],
+          "description": "Type of instructional step"
+        },
+        "title": {
+          "type": "string",
+          "description": "Display title for the step"
+        },
+        "instruction": {
+          "type": "string",
+          "description": "Instruction text (read aloud by narrator)"
+        },
+        "audioAssetId": {
+          "type": "string",
+          "description": "Reference to audio asset for this step's instruction"
+        },
+        "interactionType": {
+          "type": "string",
+          "enum": ["listen", "record", "select"],
+          "description": "How the child interacts with this step"
+        },
+        "requiredAction": {
+          "type": "string",
+          "enum": ["tap_continue", "record_audio", "select_letter", "select_answer", "tap_finish"],
+          "description": "Action required to complete the step"
+        },
+        "content": {
+          "type": "object",
+          "description": "Flexible content object. Structure depends on step type.",
+          "additionalProperties": true
+        }
+      }
+    },
+    "word": {
+      "type": "object",
+      "required": ["word", "graphemes"],
+      "properties": {
+        "word": { "type": "string" },
+        "graphemes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Grapheme segmentation of the word"
+        },
+        "phonemes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Phoneme representation"
+        },
+        "isTargetPattern": { "type": "boolean" },
+        "isReview": { "type": "boolean" },
+        "audioAssetId": { "type": "string" }
+      }
+    },
+    "decodableText": {
+      "type": "object",
+      "required": ["title", "sentences"],
+      "properties": {
+        "title": { "type": "string" },
+        "sentences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string" },
+              "words": { "type": "array", "items": { "type": "string" } },
+              "audioAssetId": { "type": "string" }
+            }
+          }
+        },
+        "totalWords": { "type": "integer" },
+        "decodableWords": { "type": "integer" },
+        "sightWords": { "type": "integer" },
+        "decodablePercentage": { "type": "number" }
+      }
+    },
+    "audioAsset": {
+      "type": "object",
+      "required": ["assetId", "path", "type", "transcript"],
+      "properties": {
+        "assetId": { "type": "string" },
+        "path": { "type": "string" },
+        "type": { "type": "string", "enum": ["instruction", "prompt", "word", "phoneme", "sentence"] },
+        "transcript": { "type": "string" },
+        "duration": { "type": "number" }
+      }
+    }
+  }
+}
