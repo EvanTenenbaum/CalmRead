@@ -4,6 +4,44 @@ This file tracks work completed across agent sessions. Append new entries at the
 
 ---
 
+## Session: January 12, 2026 (Session 3)
+
+**Agent:** Claude AI
+**Duration:** ~30 minutes
+**Role:** Content Generator / Builder
+
+### Completed
+- **C-02 Fix:** Refactored all lesson titles and instructions to sound-focused language
+  - Changed "Meet the Letter M" → "Learning the /m/ Sound" across all lessons
+  - Changed "M says /m/" → "/m/ and /s/ sounds" in all review steps
+  - Updated all audio transcripts to match new sound-focused language
+- **M-04 Fix:** Removed "a" from sight words in lesson_05 (it's decodable)
+  - Changed step_07 from "sight_word" type to "blending_practice"
+  - Updated sightWordProgression in scope_sequence_v1.json
+  - Updated all cumulativeSightWords arrays to remove "a"
+- Updated scope_sequence_v1.json with sound-focused titles for all future lessons
+- Replaced excitement language ("Great work!") with calm language ("Well done.")
+- Ran linter on all 5 lessons — all PASS
+- Updated metadata timestamps on all modified files
+
+### Files Modified
+- curriculum/lessons/lesson_01/lesson.json
+- curriculum/lessons/lesson_02/lesson.json
+- curriculum/lessons/lesson_03/lesson.json
+- curriculum/lessons/lesson_04/lesson.json
+- curriculum/lessons/lesson_05/lesson.json
+- curriculum/scope_sequence_v1.json
+
+### Issues Encountered
+- None — all changes validated successfully
+
+### Next Session Should
+- Begin Android LessonPlayer implementation (C-03)
+- Generate audio assets for lessons 01-05
+- Generate lessons 06-10 following the updated scope_sequence
+
+---
+
 ## Session: January 11, 2026 (Session 2)
 
 **Agent:** Manus AI  

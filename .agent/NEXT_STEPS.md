@@ -1,6 +1,6 @@
 # CalmRead Next Steps
 
-**Last Updated:** January 11, 2026  
+**Last Updated:** January 12, 2026
 **Status:** Active Development
 
 ---
@@ -10,36 +10,25 @@
 These must be completed before any new feature work.
 
 ### 1.1 Refactor Lesson Language to Sound-Focused
-**Status:** Not Started  
-**Effort:** 2-3 hours  
-**Files to modify:**
-- `curriculum/lessons/lesson_01/lesson.json`
-- `curriculum/lessons/lesson_02/lesson.json`
+**Status:** ✅ COMPLETED (January 12, 2026)
 
-**Changes required:**
-```
-BEFORE: "title": "Meet the Letter M"
-AFTER:  "title": "Learning the /m/ Sound"
-
-BEFORE: "instruction": "This is the letter M."
-AFTER:  "instruction": "This is the sound /m/."
-```
-
-**Validation:** Run linter after changes. All lessons must pass.
+All lessons (01-05) refactored to use sound-focused language:
+- Titles: "Meet the Letter M" → "Learning the /m/ Sound"
+- Instructions: Focus on sounds first, written form second
+- Audio transcripts updated to match
+- All lessons pass linter validation
 
 ### 1.2 Migrate Lessons to Schema v2
-**Status:** Not Started  
-**Effort:** 1-2 hours  
+**Status:** ✅ COMPLETED (January 11, 2026)
 
-Review each lesson against `schemas/lesson_schema_v2.json` and ensure compliance. The v2 schema is simpler and more flexible.
+All lessons comply with lesson_schema_v2.json.
 
 ### 1.3 Remove "a" from Sight Words
-**Status:** Not Started  
-**Effort:** 30 minutes  
+**Status:** ✅ COMPLETED (January 12, 2026)
 
-The word "a" is decodable (short vowel sound). It should not be classified as a sight word. Update:
-- `curriculum/scope_sequence_v1.json`
-- Any lessons that list "a" as a sight word
+- Removed "a" from lesson_05 sight words (it's decodable)
+- Updated scope_sequence_v1.json sightWordProgression
+- Updated all cumulativeSightWords arrays
 
 ---
 
@@ -219,6 +208,9 @@ Create structured observation forms for beta testers (parents/teachers).
 | Create automated linter | 2026-01-11 | Python script working |
 | Red Team QA review | 2026-01-11 | Report in qa/reports/ |
 | Create Android scaffold | 2026-01-11 | Basic structure only |
+| **Refactor to sound-focused language** | 2026-01-12 | C-02 fix complete |
+| **Remove "a" from sight words** | 2026-01-12 | M-04 fix complete |
+| **Update scope_sequence titles** | 2026-01-12 | All lessons updated |
 
 ---
 

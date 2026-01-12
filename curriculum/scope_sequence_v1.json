@@ -97,10 +97,10 @@
   ],
   "sightWordProgression": [
     {"lessonId": "lesson_03", "words": ["the"], "cumulativeCount": 1},
-    {"lessonId": "lesson_05", "words": ["a", "is"], "cumulativeCount": 3},
-    {"lessonId": "lesson_09", "words": ["I"], "cumulativeCount": 4},
-    {"lessonId": "lesson_13", "words": ["to", "and"], "cumulativeCount": 6},
-    {"lessonId": "lesson_16", "words": ["on"], "cumulativeCount": 7}
+    {"lessonId": "lesson_05", "words": ["is"], "cumulativeCount": 2},
+    {"lessonId": "lesson_09", "words": ["I"], "cumulativeCount": 3},
+    {"lessonId": "lesson_13", "words": ["to", "and"], "cumulativeCount": 5},
+    {"lessonId": "lesson_16", "words": ["on"], "cumulativeCount": 6}
   ],
   "reviewCadence": {
     "rules": [
@@ -114,7 +114,7 @@
     {
       "lessonId": "lesson_01",
       "lessonNumber": 1,
-      "title": "Meet M and S",
+      "title": "Learning the /m/ and /s/ Sounds",
       "type": "instruction",
       "phaseId": "phase_01",
       "taughtPatterns": [
@@ -131,14 +131,14 @@
         "allowedStructures": [],
         "targetSuccessRate": 0.95
       },
-      "objectives": ["Identify the letter m and its sound /m/", "Identify the letter s and its sound /s/", "Produce /m/ and /s/ sounds in isolation"],
+      "objectives": ["Recognize the /m/ sound and its written form", "Recognize the /s/ sound and its written form", "Produce /m/ and /s/ sounds in isolation"],
       "prerequisites": [],
       "estimatedDuration": 8
     },
     {
       "lessonId": "lesson_02",
       "lessonNumber": 2,
-      "title": "Meet T",
+      "title": "Learning the /t/ Sound",
       "type": "instruction",
       "phaseId": "phase_01",
       "taughtPatterns": [
@@ -156,7 +156,7 @@
         "allowedStructures": [],
         "targetSuccessRate": 0.95
       },
-      "objectives": ["Identify the letter t and its sound /t/", "Review m and s sounds", "Distinguish between m, s, and t"],
+      "objectives": ["Recognize the /t/ sound and its written form", "Review /m/ and /s/ sounds", "Distinguish between /m/, /s/, and /t/"],
       "prerequisites": ["lesson_01"],
       "estimatedDuration": 8
     },
@@ -226,22 +226,22 @@
       ],
       "allowedGraphemes": ["m", "s", "t", "a"],
       "bannedGraphemes": ["b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n", "o", "p", "q", "r", "u", "v", "w", "x", "y", "z"],
-      "newSightWords": ["a", "is"],
-      "cumulativeSightWords": ["the", "a", "is"],
+      "newSightWords": ["is"],
+      "cumulativeSightWords": ["the", "is"],
       "reviewOf": ["lesson_01", "lesson_02", "lesson_03", "lesson_04"],
       "decodableConstraints": {
         "maxWordLength": 1,
         "allowedStructures": ["CVC", "VC"],
         "targetSuccessRate": 0.95
       },
-      "objectives": ["Comprehensive review of m, s, t, a", "Fluent reading of all learned words", "Introduction of sight words 'a' and 'is'"],
+      "objectives": ["Comprehensive review of /m/, /s/, /t/, /æ/ sounds", "Fluent reading of all learned words", "Introduction of sight word 'is'"],
       "prerequisites": ["lesson_04"],
       "estimatedDuration": 10
     },
     {
       "lessonId": "lesson_06",
       "lessonNumber": 6,
-      "title": "Meet P",
+      "title": "Learning the /p/ Sound",
       "type": "instruction",
       "phaseId": "phase_03",
       "taughtPatterns": [
@@ -251,21 +251,21 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p"],
       "bannedGraphemes": ["b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is"],
+      "cumulativeSightWords": ["the", "is"],
       "reviewOf": ["lesson_03", "lesson_04", "lesson_05"],
       "decodableConstraints": {
         "maxWordLength": 1,
         "allowedStructures": ["CVC", "VC"],
         "targetSuccessRate": 0.90
       },
-      "objectives": ["Identify the letter p and its sound /p/", "Blend new CVC words: pat, tap, map, sap", "Read expanded decodable text"],
+      "objectives": ["Recognize the /p/ sound and its written form", "Blend new CVC words: pat, tap, map, sap", "Read expanded decodable text"],
       "prerequisites": ["lesson_05"],
       "estimatedDuration": 10
     },
     {
       "lessonId": "lesson_07",
       "lessonNumber": 7,
-      "title": "Meet N",
+      "title": "Learning the /n/ Sound",
       "type": "instruction",
       "phaseId": "phase_03",
       "taughtPatterns": [
@@ -275,21 +275,21 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n"],
       "bannedGraphemes": ["b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is"],
+      "cumulativeSightWords": ["the", "is"],
       "reviewOf": ["lesson_05", "lesson_06"],
       "decodableConstraints": {
         "maxWordLength": 1,
         "allowedStructures": ["CVC", "VC"],
         "targetSuccessRate": 0.90
       },
-      "objectives": ["Identify the letter n and its sound /n/", "Blend new CVC words: nap, tan, pan, man", "Distinguish n from m"],
+      "objectives": ["Recognize the /n/ sound and its written form", "Blend new CVC words: nap, tan, pan, man", "Distinguish /n/ from /m/"],
       "prerequisites": ["lesson_06"],
       "estimatedDuration": 10
     },
     {
       "lessonId": "lesson_08",
       "lessonNumber": 8,
-      "title": "Meet C (Hard Sound)",
+      "title": "Learning the /k/ Sound",
       "type": "instruction",
       "phaseId": "phase_03",
       "taughtPatterns": [
@@ -299,14 +299,14 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c"],
       "bannedGraphemes": ["b", "d", "e", "f", "g", "h", "i", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is"],
+      "cumulativeSightWords": ["the", "is"],
       "reviewOf": ["lesson_06", "lesson_07"],
       "decodableConstraints": {
         "maxWordLength": 1,
         "allowedStructures": ["CVC", "VC"],
         "targetSuccessRate": 0.90
       },
-      "objectives": ["Identify the letter c and its hard sound /k/", "Blend new CVC words: cat, can, cap", "Read longer decodable passage"],
+      "objectives": ["Recognize the /k/ sound and its written form", "Blend new CVC words: cat, can, cap", "Read longer decodable passage"],
       "prerequisites": ["lesson_07"],
       "estimatedDuration": 10
     },
@@ -323,7 +323,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i"],
       "bannedGraphemes": ["b", "d", "e", "f", "g", "h", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": ["I"],
-      "cumulativeSightWords": ["the", "a", "is", "I"],
+      "cumulativeSightWords": ["the", "is", "I"],
       "reviewOf": ["lesson_07", "lesson_08"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -346,7 +346,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i"],
       "bannedGraphemes": ["b", "d", "e", "f", "g", "h", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I"],
+      "cumulativeSightWords": ["the", "is", "I"],
       "reviewOf": ["lesson_09"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -360,7 +360,7 @@
     {
       "lessonId": "lesson_11",
       "lessonNumber": 11,
-      "title": "Meet D",
+      "title": "Learning the /d/ Sound",
       "type": "instruction",
       "phaseId": "phase_04",
       "taughtPatterns": [
@@ -370,14 +370,14 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d"],
       "bannedGraphemes": ["b", "e", "f", "g", "h", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I"],
+      "cumulativeSightWords": ["the", "is", "I"],
       "reviewOf": ["lesson_09", "lesson_10"],
       "decodableConstraints": {
         "maxWordLength": 1,
         "allowedStructures": ["CVC", "VC"],
         "targetSuccessRate": 0.90
       },
-      "objectives": ["Identify the letter d and its sound /d/", "Distinguish d from t", "Blend new words: dad, did, dip, dim"],
+      "objectives": ["Recognize the /d/ sound and its written form", "Distinguish /d/ from /t/", "Blend new words: dad, did, dip, dim"],
       "prerequisites": ["lesson_10"],
       "estimatedDuration": 10
     },
@@ -395,7 +395,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d"],
       "bannedGraphemes": ["b", "e", "f", "g", "h", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I"],
+      "cumulativeSightWords": ["the", "is", "I"],
       "reviewOf": ["lesson_09", "lesson_10", "lesson_11"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -426,7 +426,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d"],
       "bannedGraphemes": ["b", "e", "f", "g", "h", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": ["to", "and"],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and"],
       "reviewOf": ["lesson_01", "lesson_02", "lesson_03", "lesson_04", "lesson_05", "lesson_06", "lesson_07", "lesson_08", "lesson_09", "lesson_10", "lesson_11", "lesson_12"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -447,7 +447,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d"],
       "bannedGraphemes": ["b", "e", "f", "g", "h", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and"],
       "reviewOf": ["lesson_13"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -468,7 +468,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d"],
       "bannedGraphemes": ["b", "e", "f", "g", "h", "j", "k", "l", "o", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and"],
       "reviewOf": ["lesson_13", "lesson_14"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -491,7 +491,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d", "o"],
       "bannedGraphemes": ["b", "e", "f", "g", "h", "j", "k", "l", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": ["on"],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and", "on"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and", "on"],
       "reviewOf": ["lesson_13", "lesson_14", "lesson_15"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -505,7 +505,7 @@
     {
       "lessonId": "lesson_17",
       "lessonNumber": 17,
-      "title": "Meet G (Hard Sound)",
+      "title": "Learning the /g/ Sound",
       "type": "instruction",
       "phaseId": "phase_06",
       "taughtPatterns": [
@@ -515,21 +515,21 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d", "o", "g"],
       "bannedGraphemes": ["b", "e", "f", "h", "j", "k", "l", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and", "on"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and", "on"],
       "reviewOf": ["lesson_16"],
       "decodableConstraints": {
         "maxWordLength": 1,
         "allowedStructures": ["CVC", "VC"],
         "targetSuccessRate": 0.90
       },
-      "objectives": ["Identify the letter g and its hard sound /ɡ/", "Blend new words: got, gap, gig, dig", "Practice three-vowel discrimination"],
+      "objectives": ["Recognize the /g/ sound and its written form", "Blend new words: got, gap, gig, dig", "Practice three-vowel discrimination"],
       "prerequisites": ["lesson_16"],
       "estimatedDuration": 10
     },
     {
       "lessonId": "lesson_18",
       "lessonNumber": 18,
-      "title": "Meet H",
+      "title": "Learning the /h/ Sound",
       "type": "instruction",
       "phaseId": "phase_06",
       "taughtPatterns": [
@@ -539,14 +539,14 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d", "o", "g", "h"],
       "bannedGraphemes": ["b", "e", "f", "j", "k", "l", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and", "on"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and", "on"],
       "reviewOf": ["lesson_16", "lesson_17"],
       "decodableConstraints": {
         "maxWordLength": 1,
         "allowedStructures": ["CVC", "VC"],
         "targetSuccessRate": 0.90
       },
-      "objectives": ["Identify the letter h and its sound /h/", "Blend new words: hat, hit, hot, hip, hop", "Read expanded passages"],
+      "objectives": ["Recognize the /h/ sound and its written form", "Blend new words: hat, hit, hot, hip, hop", "Read expanded passages"],
       "prerequisites": ["lesson_17"],
       "estimatedDuration": 10
     },
@@ -564,7 +564,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d", "o", "g", "h"],
       "bannedGraphemes": ["b", "e", "f", "j", "k", "l", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and", "on"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and", "on"],
       "reviewOf": ["lesson_16", "lesson_17", "lesson_18"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -585,7 +585,7 @@
       "allowedGraphemes": ["m", "s", "t", "a", "p", "n", "c", "i", "d", "o", "g", "h"],
       "bannedGraphemes": ["b", "e", "f", "j", "k", "l", "q", "r", "u", "v", "w", "x", "y", "z"],
       "newSightWords": [],
-      "cumulativeSightWords": ["the", "a", "is", "I", "to", "and", "on"],
+      "cumulativeSightWords": ["the", "is", "I", "to", "and", "on"],
       "reviewOf": ["lesson_01", "lesson_02", "lesson_03", "lesson_04", "lesson_05", "lesson_06", "lesson_07", "lesson_08", "lesson_09", "lesson_10", "lesson_11", "lesson_12", "lesson_13", "lesson_14", "lesson_15", "lesson_16", "lesson_17", "lesson_18", "lesson_19"],
       "decodableConstraints": {
         "maxWordLength": 1,
@@ -599,7 +599,7 @@
   ],
   "metadata": {
     "createdAt": "2026-01-11T00:00:00Z",
-    "updatedAt": "2026-01-11T00:00:00Z",
+    "updatedAt": "2026-01-12T00:00:00Z",
     "author": "CalmRead System Architect",
     "researchBasis": [
       "National Reading Panel (2000)",

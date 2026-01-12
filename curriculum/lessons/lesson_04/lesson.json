@@ -28,7 +28,7 @@
       "stepNumber": 1,
       "type": "review",
       "title": "Review Sounds",
-      "instruction": "Let's review all our sounds. M says /m/. S says /s/. T says /t/. A says /æ/.",
+      "instruction": "Let's review all our sounds: /m/, /s/, /t/, and /æ/.",
       "audioAssetId": "instruction_review_sounds",
       "interactionType": "listen",
       "requiredAction": "tap_continue",
@@ -246,8 +246,8 @@
       "stepId": "step_14",
       "stepNumber": 14,
       "type": "review",
-      "title": "Great Reading",
-      "instruction": "Great reading! You practiced all our short a words.",
+      "title": "Good Reading",
+      "instruction": "Good reading. You practiced all our /æ/ words.",
       "audioAssetId": "instruction_great_reading",
       "interactionType": "listen",
       "requiredAction": "tap_continue",
@@ -261,13 +261,13 @@
       "stepNumber": 15,
       "type": "completion",
       "title": "All Done",
-      "instruction": "All done. You practiced reading short a words.",
+      "instruction": "All done. You practiced reading /æ/ words.",
       "audioAssetId": "prompt_completion",
       "interactionType": "listen",
       "requiredAction": "tap_finish",
       "content": {
         "displayText": "All Done",
-        "completionMessage": "You practiced reading short a words."
+        "completionMessage": "You practiced reading /æ/ words."
       }
     }
   ],
@@ -296,7 +296,7 @@
     "decodablePercentage": 90.0
   },
   "audioAssets": [
-    {"assetId": "instruction_review_sounds", "path": "prompts/instruction_review_sounds.mp3", "type": "instruction", "transcript": "Let's review all our sounds. M says /m/. S says /s/. T says /t/. A says /æ/.", "duration": 6.0},
+    {"assetId": "instruction_review_sounds", "path": "prompts/instruction_review_sounds.mp3", "type": "instruction", "transcript": "Let's review all our sounds: /m/, /s/, /t/, and /æ/.", "duration": 6.0},
     {"assetId": "prompt_say_sounds", "path": "prompts/prompt_say_sounds.mp3", "type": "prompt", "transcript": "Say each sound with me: /m/ ... /s/ ... /t/ ... /æ/.", "duration": 5.0},
     {"assetId": "instruction_practice_mat", "path": "prompts/instruction_practice_mat.mp3", "type": "instruction", "transcript": "Let's practice our words. Blend with me: /m/ ... /æ/ ... /t/ ... mat.", "duration": 5.5},
     {"assetId": "instruction_practice_sat", "path": "prompts/instruction_practice_sat.mp3", "type": "instruction", "transcript": "Blend with me: /s/ ... /æ/ ... /t/ ... sat.", "duration": 4.0},
@@ -309,8 +309,8 @@
     {"assetId": "prompt_your_turn", "path": "prompts/prompt_your_turn.mp3", "type": "prompt", "transcript": "Now you read the story. Touch each word.", "duration": 3.0},
     {"assetId": "prompt_question_1", "path": "prompts/prompt_question_1.mp3", "type": "prompt", "transcript": "What did Sam do?", "duration": 1.5},
     {"assetId": "prompt_question_2", "path": "prompts/prompt_question_2.mp3", "type": "prompt", "transcript": "Where did Tam sit?", "duration": 1.5},
-    {"assetId": "instruction_great_reading", "path": "prompts/instruction_great_reading.mp3", "type": "instruction", "transcript": "Great reading! You practiced all our short a words.", "duration": 3.5},
-    {"assetId": "prompt_completion", "path": "prompts/prompt_completion.mp3", "type": "prompt", "transcript": "All done. You practiced reading short a words.", "duration": 3.0},
+    {"assetId": "instruction_great_reading", "path": "prompts/instruction_great_reading.mp3", "type": "instruction", "transcript": "Good reading. You practiced all our /æ/ words.", "duration": 3.5},
+    {"assetId": "prompt_completion", "path": "prompts/prompt_completion.mp3", "type": "prompt", "transcript": "All done. You practiced reading /æ/ words.", "duration": 3.0},
     {"assetId": "word_mat", "path": "words/word_mat.mp3", "type": "word", "transcript": "mat", "duration": 1.0},
     {"assetId": "word_sat", "path": "words/word_sat.mp3", "type": "word", "transcript": "sat", "duration": 1.0},
     {"assetId": "word_tam", "path": "words/word_tam.mp3", "type": "word", "transcript": "tam", "duration": 1.0},
@@ -319,7 +319,7 @@
   ],
   "metadata": {
     "createdAt": "2026-01-11T00:00:00Z",
-    "updatedAt": "2026-01-11T00:00:00Z",
+    "updatedAt": "2026-01-12T00:00:00Z",
     "author": "CalmRead Content Generator",
     "reviewStatus": "approved",
     "qaReportId": "qa_lesson_04_v1"
